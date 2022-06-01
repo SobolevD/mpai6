@@ -45,10 +45,18 @@ def show_compressed_images(c_images):
 def show_entropy_graph(epsilons, entropies):
     fig = plt.figure(figsize=(20, 10))
     fig.add_subplot(1, 1, 1)
-    plt.plot(epsilons, entropies[0], color='red', linestyle='-', linewidth=1)
-    plt.plot(epsilons, entropies[1], color='blue', linestyle='-', linewidth=1)
-    plt.plot(epsilons, entropies[2], color='green', linestyle='-', linewidth=1)
-    plt.plot(epsilons, entropies[3], color='yellow', linestyle='-', linewidth=1)
+    plt.plot(epsilons, entropies[0], color='yellow', linestyle='-', linewidth=1)
+    plt.plot(epsilons, entropies[1], color='green', linestyle='-', linewidth=1)
+    plt.plot(epsilons, entropies[2], color='blue', linestyle='-', linewidth=1)
+    plt.plot(epsilons, entropies[3], color='red', linestyle='-', linewidth=1)
     plt.legend(['predictor 1', 'predictor 2', 'predictor 3', 'predictor 4'])
     fig.savefig('Entropy_value_from_e.jpg')
+    show()
+
+
+def show_img_with_predictor(f, r):
+    fig = plt.figure(figsize=(20, 10))
+    fig.add_subplot(1, 1, 1)
+    plt.title(f"f(dif_img) with predictor {r}")
+    imshow(f, cmap='gray')  # , vmin=0, vmax=255  autocontrast
     show()

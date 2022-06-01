@@ -1,3 +1,9 @@
+from skimage.io import imread
+
+from util.consts import PATH_TO_FILE
+
+x = imread(PATH_TO_FILE)
+
 epsilons = []
 
 entropy_array1 = []
