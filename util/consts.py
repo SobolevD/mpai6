@@ -1,4 +1,4 @@
-PATH_TO_FILE = "resources\\test_image.tif"
+PATH_TO_FILE = "../resources/test_image.tif"
 START_EPSILON = 0
 END_EPSILON = 41
 

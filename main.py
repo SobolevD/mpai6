@@ -1,10 +1,10 @@
 import numpy as np
 from skimage.io import imread
 
-from canvas import show_decompressed_images, show_compressed_images, show_entropy_graph
-from consts import PATH_TO_FILE, START_EPSILON, END_EPSILON, TASK_5_EPSILONS, TASK_7_EPSILONS
-from difcode import MyDifCode, MyDifDecode
-from entropy import get_entropy
+from util.canvas import show_decompressed_images, show_compressed_images, show_entropy_graph
+from util.consts import PATH_TO_FILE, START_EPSILON, END_EPSILON, TASK_5_EPSILONS, TASK_7_EPSILONS
+from util.difcode import MyDifCode, MyDifDecode
+from util.entropy import get_entropy
 from initialization import q3_array, q2_array, q1_array, q4_array, img_decompress1, img_decompress2, img_decompress3, \
     img_decompress4, epsilons, entropy_array1, entropy_array2, entropy_array3, entropy_array4, max_epsilon1, \
     max_epsilon2, max_epsilon3, max_epsilon4
